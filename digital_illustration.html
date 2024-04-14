@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Illustration Gallery</title>
+   
+    <link rel="stylesheet" href="styles.css"><!-- Agrega tu archivo CSS si lo tienes -->
+    <style>
+
+      
+      .gallery>a:hover>img {
+        
+            filter: grayscale(0);
+            transform: scale(0.5);
+            /* Modificado */
+            object-fit:contain;
+            /* Modificado */
+            box-shadow: 0 0 20px cyan; 
+            padding: 0;
+            width: max-content;
+        /* Establece el ancho del contenedor igual al ancho de la imagen */
+            height: max-content;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Digital Illustration Gallery</h1>
+    </header>
+    <main>
+    <div class="gallery">
+        <a href="images/digital_illustration/illustration1.jpg" onmouseover="showImageInfo(this)" class="image-container">
+            <img src="IMG/CAMISTEA VENUS 3.jpg" alt="Illustration 1" class="gallery-image">
+            <div class="image-info">
+                Technique: Vector Art <br>
+                Programs: Illustrator
+            </div>
+        </a>
+        <!-- Repite lo mismo para otras imágenes -->
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/dona.jpg" alt="Illustration 2">
+                <div class="image-info">
+                    Technique: Digital Painting<br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/PEYOTE2.jpg" alt="Illustration 3">
+                <div class="image-info">
+                    Technique: Mixed Media<br>
+                    Programs: Photoshop, Corel Painter, Wacom
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/POSTER TITIRIBI.jpeg" alt="Illustration 4">
+                <div class="image-info">
+                    Technique: Mixed Media<br>
+                    Programs: Photoshop, Corel Painter, Wacom
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/CINE CLUB EL HOYO DEL CONEJO.jpeg" alt="Illustration 5">
+                <div class="image-info">
+                    Technique: Vector Art<br>
+                    Programs: Illustrator
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/POSETR BANDAS.jpeg" alt="Illustration 6">
+                <div class="image-info">
+                    Technique: Digital Collage<br>
+                    Programs: Photoshop, Corel Painter, Wacom
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="CV JUAN.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Illustration Gallery</title>
+
+    <link rel="stylesheet" href="styles.css"><!-- Agrega tu archivo CSS si lo tienes -->
+    <style>
+        .gallery>a:hover>img {
+
+            filter: grayscale(0);
+            transform: scale(0.5);
+            /* Modificado */
+            object-fit: contain;
+            /* Modificado */
+            box-shadow: 0 0 20px cyan;
+            padding: 0;
+            width: max-content;
+            /* Establece el ancho del contenedor igual al ancho de la imagen */
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Product Photography</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="images/digital_illustration/illustration1.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/HYPY1.png" alt="Illustration 1">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <!-- Repite lo mismo para otras imágenes -->
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/HYPY2.png" alt="Illustration 2">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/HYPY4.png" alt="Illustration 3">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/HYPY5.png" alt="Illustration 4">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/HYPY7.png" alt="Illustration 5">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+            <a href="images/digital_illustration/illustration2.jpg" onmouseover="showImageInfo(this)">
+                <img src="IMG/FUZE TEA.png" alt="Illustration 6">
+                <div class="image-info">
+                    Technique: Digital Photography <br>
+                    Programs: Photoshop
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="CV JUAN.js"></script>
+</body>
+
+</html>
