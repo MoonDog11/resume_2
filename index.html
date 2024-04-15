@@ -10,76 +10,27 @@
 
     <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    }
-    
-    body{
-        height: 500px;
-    }
-
-/*FONTS*/
-
-     @font-face {
-        font-family: "BlackDragon";
-        src: url(Signotera\ Brush.ttf);
-    }
-    
-    @font-face {
-        font-family: "BlackDragon2";
-        src: url(Knoxx.ttf);
-    }
-    
-    @font-face {
-        font-family: "BlackDragon3";
-        src: url(Exima\ Geometric.ttf);
-    }
-    
-.logo {
-    font-family: "BlackDragon";
-    font-size: 40px;     
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
 }
-
- .container {
-     max-width: 800px;
-     margin: 0 auto;
-     padding: 20px;
- }
-
- h2 {
-     color: #fefafa;
-     font-size: 24px;
-     margin-bottom: 20px;
- }
-
- p {
-     color: #666;
-     font-size: 16px;
- }
-
- .highlight {
-     font-weight: bold;
-     color: #007bff;
- }
-
-
-/*MENU*/
-
-html {
- scroll-behavior: smooth;    
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
 }
-
-.contenedor-header {
-    background-color: cadetblue;
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
     width: 100%;
-    top: 0%;
-    left: 0%;
-    z-index: 99%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
-
-.contenedor-header header {
+.contenedor-header header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -87,97 +38,71 @@ html {
     align-items: center;
     padding: 15px 20px;
 }
-
-.contenedor-header header .logo a {
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
     font-size: 36px;
-    color: aqua;
+    color: #1CB698;
     text-decoration: none;
-
 }
-
-.contenedor-header header ul {
-    font-family:"BlackDragon2";
+.contenedor-header header ul{
     display: flex;
     list-style: none;
 }
-
-.contenedor-header header nav ul li a {
-text-align: none;
-color: aquamarine;
-margin: 0 15px;
-padding: 3px;
-transition: .5s;
-text-decoration: none;
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
 }
-
-.contenedor-header header nav ul li a:hover {
- color:rgb(255, 255, 255);
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
 }
-
-.nav-responsive {
-    background-color: cornflowerblue;
-    color: beige;
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
 }
-
-/* HOME*/
-
-.inicio {
-    margin-bottom: 0px;
-    background: linear-gradient(to top, #07d6f1, #02effb);
-    background-image: url(skull-DkzWTPiy.jpeg); /* Agregada la imagen de fondo */
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
     display: flex;
     align-items: center;
-    background-size: cover;
-    color: #f2f7f8;
-    height: 90vh;
-  
 }
-.inicio .contenedor-banner{
-    padding:20px;
-    background-color:rgb(6, 196, 248);
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
     max-width: 350px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
-    background: linear-gradient(to top, #bfc0c0, #363636);
- 
 }
-
-.inicio .contenedor-banner img{
-    margin-top: 0px;
-    border: 10px solid #07f1e9;
-    display: block;
-    width: 100%;
-    margin: auto;
-    border-radius: 100%; 
-    align-self: auto;
-    width: 100%;
-    height: auto;
-  
-}
-
-
-.inicio .contenedor-banner h1{
-    font-family: "BlackDragon3";
+.inicio .contenido-banner img{
     margin-top: 40px;
-    font-size: 35px; 
-  
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
 }
-
-
-.inicio .contenedor-banner h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
-   
 }
-
-.inicio .contenedor-banner .redes a{
+.inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -188,120 +113,87 @@ text-decoration: none;
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: 0.3s;
-   
+    transition: .3s;
 }
-
-.inicio .contenedor-banner .redes a:hover{
-    background-color: aquamarine;
-    
-    
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
 }
-
-/* ABOUT ME*/
-
 .sobremi{
-    margin-top: 0px;
-    background-color: #323333;
+    background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-
-.sobremi .contenido-seccion {
-    max-width: 900px;
+.sobremi .contenido-seccion{
+    max-width: 1100px;
     margin: auto;
 }
-
-
 .sobremi h2{
     font-size: 48px;
-    font-family: "BlackDragon3";
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-}
 
+}
 .sobremi .contenido-seccion p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .sobremi .contenido-seccion p span{
-    color: #07f1e9;
+    color: #1CB698;
     font-weight: bold;
 }
-
 .sobremi .fila{
-   display: flex;
+    display: flex;
 }
-
- .sobremi .fila .col
- 
+.sobremi .fila .col
 {
-width: 50%;
+    width: 50%;
 }
-
 .sobremi .fila .col h3{
     font-size: 28px;
-    text-align: center;
-    font-family: "BlackDragon2";
+    font-family: 'Righteous';
     margin-bottom: 25px;
 }
-
-
 .sobremi .fila .col ul{
-     list-style: none;
+    list-style: none;
 }
-
 .sobremi .fila .col ul li{
     margin: 12px 0;
 }
-
-
 .sobremi .fila .col ul li strong{
-display: inline-block;
-color: #07f1e9;
-width: 130px;
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
 }
-
-
 .sobremi .fila .col ul li span{
-    background-color: #07f1e9;
+    background-color: #1CB698;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-
-.sobremi .fila .col .contenedor-hobbies{
+.sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
 }
-
-.sobremi .fila .col .contenedor-hobbies .intereses{
- width: 100px;
- height: 100px;
- background-color: #0f0f0f;
- border-radius: 10px;
- margin: 0 15px 15px 0;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- transition: .3s;
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
 }
-
-.sobremi .fila .col .contenedor-hobbies .intereses:hover{
-    background-color: #03fdfd;
-}
-
-
-.sobremi .fila .col .contenedor-hobbies .intereses i{
+.sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-
-/* BOTON HOJA DE VIDA*/
-
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -328,9 +220,6 @@ width: 130px;
 .sobremi button:hover .overlay{
     width: 100%;
 }
-
- 
-
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -343,7 +232,7 @@ width: 130px;
 }
 .skills h2{
     font-size: 48px;
-    font-family: 'BlackDragon3';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
@@ -357,12 +246,13 @@ width: 130px;
 }
 .skills .fila .col h3{
     font-size: 28px;
-    font-family: 'BlackDragon2';
+    font-family: 'Righteous';
     margin-bottom: 25px;
 }
 .skills .skill > span{
     font-weight: bold;
     display: block;
+    margin-bottom: 10px;
 }
 .skills .skill .barra-skill{
     height: 8px;
@@ -390,7 +280,7 @@ width: 130px;
     right: -15px;
     font-size: 14px;
 }
-
+/* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
@@ -480,7 +370,6 @@ width: 130px;
     0%{width: 0%;}
     100%{width: 94%;}
 }
-
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -493,7 +382,7 @@ width: 130px;
 }
 .curriculum h2{
     font-size: 48px;
-    font-family: 'BlackDragon3';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
@@ -508,7 +397,7 @@ width: 130px;
 }
 .curriculum .fila .col h3{
     font-size: 28px;
-    font-family: 'BlackDragon2';
+    font-family: 'Righteous';
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
@@ -524,7 +413,6 @@ width: 130px;
     position: relative;
 }
 .curriculum .fila .item h4{
-    font-family: '';
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -588,7 +476,6 @@ width: 130px;
     position: relative;
     bottom: 4px;
 }
-
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
@@ -601,7 +488,7 @@ width: 130px;
 }
 .portfolio h2{
     font-size: 48px;
-    font-family: 'BlackDragon3';
+    font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
@@ -609,14 +496,11 @@ width: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
 }
 .portfolio .galeria .proyecto{
     position: relative;
-            /* Ajusta el ancho máximo de cada imagen */
-    max-width: 300px;
+    max-width: 340px;
+    height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
@@ -650,60 +534,41 @@ width: 130px;
     margin-bottom: 0px;
 }
 /* SECCION CONTACTO */
-.contacto h2{
-    font-size: 48px;
-    font-family: 'BlackDragon3';
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* SECCION CONTACTO */
-.contacto {
-    background-image: url(https://www.google.com/maps/place/Av+Jimenez+de+Quesada+%237-40,+Bogot%C3%A1/@4.6020171,-74.0736237,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f99a6d4ecb923:0x16435d87eeb8445f!8m2!3d4.6020171!4d-74.0736237);
+.contacto{
+    background-image: url(img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
     display: flex;
-    /* Para centrar el contenido verticalmente */
-    justify-content: center;
-    /* Para centrar el contenido horizontalmente */
 }
-
-.contacto .contenido-seccion {
-    max-width: 800px;
-    /* Ajusta el ancho máximo según tu preferencia */
-    width: 100%;
-    /* Asegura que ocupe todo el ancho disponible */
-    text-align: justify;
-    /* Justifica el texto */
-}
-
-.contacto .fila {
-    display: flex;
-    flex-wrap: wrap;
-    /* Permite que los elementos se ajusten si el ancho es menor */
-}
-
-.contacto .col {
-    width: 100%;
-    /* Ajusta el ancho de la columna */
+.contacto .col{
+    width: 50%;
     padding: 10px;
     position: relative;
 }
-
-.contacto .col input,
-.contacto .col textarea {
+.contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252a2e;
+    background-color: #252A2E;
     color: #fff;
     font-size: 18px;
 }
-
-.contacto button {
+.contacto button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -716,50 +581,42 @@ width: 130px;
     position: relative;
     z-index: 10;
 }
-
-.contacto button .overlay {
+.contacto button .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1cb698;
+    background-color: #1CB698;
     z-index: -1;
     transition: 1s;
 }
-
-.contacto button:hover .overlay {
+.contacto button:hover .overlay{
     width: 100%;
 }
-
-.contacto .col img {
+.contacto .col img{
     width: 100%;
 }
-
-.contacto .col .info {
+.contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #252a2e;
+    background-color: #252A2E;
     padding: 20px;
-    max-width: 350px;
+    max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.contacto .col .info ul {
+.contacto .col .info ul{
     list-style: none;
 }
-
-.contacto .col .info ul li {
+.contacto .col .info ul li{
     margin-bottom: 20px;
 }
-
-.contacto .col .info ul li i {
-    color: #1cb698;
+.contacto .col .info ul li i{
+    color: #1CB698;
     display: inline-block;
     margin-right: 20px;
 }
-
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -799,14 +656,14 @@ footer .arriba{
     font-size: 18px;
 }
 /* SECCION RESPONSIVE */
-@media screen and (max-width:980px) {
-    .nav {
+@media screen and (max-width:980px){
+    nav{
         display: none;
     }
-    .nav-responsive {
+    .nav-responsive{
         display: block;
     }
-    nav.responsive {
+    nav.responsive{
         display: block;
         position: absolute;
         right: 0;
@@ -814,92 +671,58 @@ footer .arriba{
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul {
+    nav.responsive ul{
         display: block !important;
     }
-    nav.responsive ul li {
+    nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
-
-@media screen and (max-width:700px) {
-    .logo a {
-        font-size: 24px;
-    }
-    /* Ajuste del tamaño de la fuente del menú */
-    header nav ul li a {
-        font-size: 14px;
-    }
-    /* Ajuste del ancho máximo del contenedor principal */
-    .container {
-        max-width: 200%;
-    }
-    /* Ajuste del ancho de las columnas en secciones de fila */
-    .fila .col {
-        width: 100%;
-        padding: 0 10px; /* Puedes ajustar el espaciado según sea necesario */
-    }
-    /* Otros ajustes de diseño específicos para dispositivos móviles */
-    .sobremi .fila {
+@media screen and (max-width:700px){
+    .sobremi .fila{
         display: block;
     }
-    .sobremi .fila .col {
+    .sobremi .fila .col{
         width: fit-content;
     }
-    .skills .fila {
+
+    .skills .fila{
         display: block;
     }
-    .skills .fila .col {
+    .skills .fila .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill {
+    .skills .fila .col .barra-skill{
         width: 100%;
     }
-    .curriculum .fila {
+
+    .curriculum .fila{
         display: block;
     }
-    .curriculum .fila .col {
+    .curriculum .fila .col{
         width: 90%;
     }
-    .curriculum .fila .derecha {
+    .curriculum .fila .derecha{
         margin-left: 20px;
     }
-    .portfolio .galeria {
+
+    .portfolio .galeria{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto {
+    .portfolio .galeria .proyecto{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img {
+    .portfolio .galeria .proyecto img{
         width: 100%;
     }
-    .contacto .fila {
+    .contacto .fila{
         display: block;
     }
-    .contacto .fila .col {
+    .contacto .fila .col{
         width: 100%;
     }
-}
-
-.boton-descarga {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 15px 32px; /* Espaciado alrededor del texto */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Mostrar como bloque */
-    font-size: 16px; /* Tamaño del texto */
-    margin: 4px 2px; /* Margen superior e inferior */
-    transition-duration: 0.4s; /* Duración de la transición */
-    cursor: pointer; /* Cursor al pasar sobre el botón */
-    border-radius: 8px; /* Radio de borde */
-}
-
-.boton-descarga:hover {
-    background-color: #45a049; /* Cambio de color al pasar el mouse */
 }
 
           </style>
