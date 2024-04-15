@@ -939,13 +939,44 @@ footer .arriba{
         </div>
     </div>
     <style>
-        @font-face {
-            font-family: "BlackDragon3";
-            src: url('/Exima Geometric.ttf');
+    /* Estilos generales */
+    .inicio {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-banner {
+        padding: 20px;
+    }
+
+    .contenedor-img {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-family: 'BlackDragon3';
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* Estilos para dispositivos pequeños */
+    @media screen and (max-width: 768px) {
+        .contenedor-banner {
+            padding: 10px;
         }
+
         h1 {
-            font-family: 'BlackDragon3';
+            font-size: 1.5em;
         }
+
+        h2 {
+            font-size: 1em;
+        }
+    }
     </style>
 </section>
 
