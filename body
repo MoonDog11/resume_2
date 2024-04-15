@@ -2,9 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -1799,7 +1797,7 @@ h1 {
         .image-container {
             position: relative;
             width: 300px; /* Ancho deseado para la imagen */
-            height: 540px; /* Altura ajustada automáticamente */
+            height: 300px; /* Altura ajustada automáticamente */
         }
 
         .image-container img {
@@ -2229,9 +2227,6 @@ h1 {
     </style>
 </section>
 
-</body>
-</html>
-
     <!-- footer -->
     <footer>
         <a href="#inicio" class="arriba">
@@ -2347,4 +2342,5 @@ h1 {
 });
     </script>
 </body>
+
 </html>
