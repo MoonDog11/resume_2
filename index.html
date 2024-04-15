@@ -595,9 +595,14 @@ width: 130px;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+.portfolio .contenido-seccion {
+    max-width: 1100px; /* Anchura máxima predeterminada */
+    margin: auto; /* Centrado horizontal */
+
+    /* Media query para pantallas pequeñas */
+    @media only screen and (max-width: 768px) {
+        max-width: 90%; /* Cambiar la anchura máxima para pantallas pequeñas */
+    }
 }
 .portfolio h2{
     font-size: 48px;
