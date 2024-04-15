@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -1273,18 +1272,13 @@ footer .arriba{
             font-family: 'BlackDragon3';
         }
     </style>
-        </section>   
-    </body>
+        </section>
 
  <!-- SECCION PORTFOLIO -->
-
     <section id="portfolio" class="portfolio">
+         </div>
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
-        </div>
-
-
-<!-- IMAGEN DIGITAL ILLUSTRATION -->
             <div class="galeria">
                <div class="proyecto">
                     <img src="boton1_galeria_cvjuanh.png" width="50%" alt="">
@@ -1482,6 +1476,7 @@ text-align: center;
     </style>
     
 </head>
+<body>
            
     <div id="digital_illustration_gallery">
         <header>
@@ -1797,7 +1792,7 @@ h1 {
         .image-container {
             position: relative;
             width: 300px; /* Ancho deseado para la imagen */
-            height: 300px; /* Altura ajustada automáticamente */
+            height: auto; /* Altura ajustada automáticamente */
         }
 
         .image-container img {
@@ -2186,9 +2181,7 @@ h1 {
         </div>
     </div>
 </a>
- </section>
-
-    
+    </section>
 
 
 
