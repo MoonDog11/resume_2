@@ -805,91 +805,67 @@ footer .arriba{
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
-    nav{
-        display: none;
+    body {
+        padding-top: 75px; /* Agrega espacio en la parte superior para el navbar */
     }
-    .nav-responsive{
-        display: block;
+    nav {
+        display: none; /* Oculta el navbar en pantallas más pequeñas */
     }
-    nav.responsive{
+    .nav-responsive {
+        display: block; /* Muestra el botón de menú responsive */
+    }
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
+        top: 75px; /* Posiciona el menú responsive debajo del navbar */
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul{
+    nav.responsive ul {
         display: block !important;
     }
-    nav.responsive ul li{
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
 @media screen and (max-width:700px){
-    .sobremi .fila{
-        display: block;
+    body {
+        padding-top: 0; /* Reinicia el padding-top en pantallas más pequeñas */
     }
-    .sobremi .fila .col{
-        width: fit-content;
+    .sobremi .fila,
+    .skills .fila,
+    .curriculum .fila,
+    .portfolio .galeria,
+    .contacto .fila {
+        display: block; /* Asegura que las filas se muestren como bloques en pantallas más pequeñas */
     }
-
-    .skills .fila{
-        display: block;
+    .sobremi .fila .col,
+    .skills .fila .col,
+    .curriculum .fila .col,
+    .contacto .fila .col {
+        width: 100%; /* Haz que las columnas ocupen el 100% del ancho en pantallas más pequeñas */
     }
-    .skills .fila .col{
-        width: 100%;
+    .skills .fila .col .barra-skill {
+        width: 100%; /* Ajusta la anchura de las barras de habilidades al 100% en pantallas más pequeñas */
     }
-    .skills .fila .col .barra-skill{
-        width: 100%;
+    .curriculum .fila .col {
+        width: 90%; /* Reduce ligeramente el ancho de las columnas de currículum en pantallas más pequeñas */
     }
-
-    .curriculum .fila{
-        display: block;
+    .curriculum .fila .derecha {
+        margin-left: 20px; /* Ajusta el margen izquierdo de la columna derecha del currículum */
     }
-    .curriculum .fila .col{
-        width: 90%;
+    .portfolio .galeria,
+    .portfolio .galeria .proyecto,
+    .portfolio .galeria .proyecto img {
+        width: 100%; /* Ajusta el ancho de la galería y las imágenes de proyecto al 100% en pantallas más pequeñas */
+        max-width: none; /* Anula la máxima anchura establecida para los proyectos */
     }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
+    .contacto .fila,
+    .contacto .fila .col {
+        width: 100%; /* Haz que la fila y las columnas de contacto ocupen el 100% del ancho en pantallas más pequeñas */
     }
-
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
-}
-
-.boton-descarga {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto /*
-    border: none; /* Sin borde */
-    padding: 15px 32px; /* Espaciado alrededor del texto */
-    text-align: center; /* Alineación del texto */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Mostrar como bloque */
-    font-size: 16px; /* Tamaño del texto */
-    margin: 4px 2px; /* Margen superior e inferior */
-    transition-duration: 0.4s; /* Duración de la transición */
-    cursor: pointer; /* Cursor al pasar sobre el botón */
-    border-radius: 8px; /* Radio de borde */
-}
-
-.boton-descarga:hover {
-    background-color: #45a049; /* Cambio de color al pasar el mouse */
 }
           </style>
 </head>
