@@ -951,7 +951,39 @@ footer .arriba{
         <div class="contenido-seccion" style="background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)); max-width: 800px; width: 100%; margin: 0 auto; text-align: justify;">
             <div class="container">
                 <h2 style="font-family: 'BlackDragon3';">About Me</h2>
-
+                <p>
+                    As a <span class="highlight">professional publisher and fullstack developer</span>, I bring a unique blend of
+                    visual design expertise and fullstack development skills to the table.
+                </p>
+                <h3>Why Choose Me?</h3>
+                <ul>
+                    <li>
+                        <span class="highlight">Extensive Experience:</span> With a background in publishing, I understand the
+                        importance of visual communication. This translates into my ability to create visually appealing and
+                        functional web projects.
+                    </li>
+                    <li>
+                        <span class="highlight">Fullstack Development:</span> I excel in both frontend and backend development,
+                        allowing me to create complete and robust web applications from scratch.
+                    </li>
+                    <li>
+                        <span class="highlight">Passion for Design & Programming:</span> My passion for design and programming
+                        drives me to continually enhance my skills and take on new challenges.
+                    </li>
+                </ul>
+                <h3>Core Skills</h3>
+                <ul>
+                    <li>Frontend Development: HTML, CSS, JavaScript</li>
+                    <li>Backend Development: Node.js, Express.js, MongoDB</li>
+                    <li>Frameworks: React, Vue.js</li>
+                    <li>Visual Design Tools: Adobe Creative Suite, Figma</li>
+                    <li>Project Management: Agile Methodologies</li>
+                </ul>
+                <p>
+                    <span class="highlight">Ready to Collaborate?</span> If you're looking for a skilled fullstack developer with a
+                    strong background in publishing and design, let's ! I'm eager to help take your project to the next
+                    level.
+                </p>
             <div class="fila">
                 <!-- DATOS PERSONALES -->
                 <div class="col">
