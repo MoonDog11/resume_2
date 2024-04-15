@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+<html>
 
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="estiloCV.css">
     <style>
 
 *{
@@ -886,7 +885,6 @@ footer .arriba{
 .boton-descarga:hover {
     background-color: #45a049; /* Cambio de color al pasar el mouse */
 }
-
           </style>
 </head>
 
@@ -939,44 +937,13 @@ footer .arriba{
         </div>
     </div>
     <style>
-    /* Estilos generales */
-    .inicio {
-        position: relative;
-        width: 100%;
-        text-align: center;
-    }
-
-    .contenedor-banner {
-        padding: 20px;
-    }
-
-    .contenedor-img {
-        margin-top: 20px;
-    }
-
-    h1 {
-        font-family: 'BlackDragon3';
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    /* Estilos para dispositivos pequeños */
-    @media screen and (max-width: 768px) {
-        .contenedor-banner {
-            padding: 10px;
+        @font-face {
+            font-family: "BlackDragon3";
+            src: url('/Exima Geometric.ttf');
         }
-
         h1 {
-            font-size: 1.5em;
+            font-family: 'BlackDragon3';
         }
-
-        h2 {
-            font-size: 1em;
-        }
-    }
     </style>
 </section>
 
@@ -1306,15 +1273,18 @@ footer .arriba{
             font-family: 'BlackDragon3';
         }
     </style>
-        </section>
-
-</body>
+        </section>   
+    </body>
 
  <!-- SECCION PORTFOLIO -->
+
     <section id="portfolio" class="portfolio">
-         </div>
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
+        </div>
+
+
+<!-- IMAGEN DIGITAL ILLUSTRATION -->
             <div class="galeria">
                <div class="proyecto">
                     <img src="boton1_galeria_cvjuanh.png" width="50%" alt="">
@@ -1329,7 +1299,8 @@ footer .arriba{
     <!DOCTYPE html>
 <html lang="es">
 <head>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Illustration Gallery</title>
     
     <style>
@@ -1511,7 +1482,6 @@ text-align: center;
     </style>
     
 </head>
-<body>
            
     <div id="digital_illustration_gallery">
         <header>
@@ -1586,7 +1556,8 @@ text-align: center;
     <!DOCTYPE html>
 <html lang="es">
 <head>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <style>
 
 
@@ -1826,7 +1797,7 @@ h1 {
         .image-container {
             position: relative;
             width: 300px; /* Ancho deseado para la imagen */
-            height: auto; /* Altura ajustada automáticamente */
+            height: 540px; /* Altura ajustada automáticamente */
         }
 
         .image-container img {
@@ -2215,7 +2186,9 @@ h1 {
         </div>
     </div>
 </a>
-    </section>
+ </section>
+
+    
 
 
 
@@ -2253,6 +2226,9 @@ h1 {
        
     </style>
 </section>
+
+</body>
+</html>
 
     <!-- footer -->
     <footer>
@@ -2368,6 +2344,5 @@ h1 {
     mostrarPagina('/APP_DEVELOPMENT.html');
 });
     </script>
-</body>
 
 </html>
