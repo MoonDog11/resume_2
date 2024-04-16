@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+<html>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="estiloCV.css">
     <style>
 
 *{
@@ -16,12 +14,9 @@
     padding: 0%;
     }
     
-    body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    body{
+        height: 500px;
+    }
 
 /*FONTS*/
 
@@ -46,11 +41,10 @@
 }
 
  .container {
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto; /* Esto centrará el contenedor */
-}
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+ }
 
  h2 {
      color: #fefafa;
@@ -124,8 +118,7 @@ text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor:pointer;
-    display:none;
-
+    display: none;
 }
 
 /* HOME*/
@@ -600,14 +593,9 @@ width: 130px;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion {
-    width: 100%; /* Cambiar de max-width a width */
-    margin: auto; /* Centrado horizontal */
-
-    /* Media query para pantallas pequeñas */
-    @media only screen and (max-width: 768px) {
-        max-width: 90%; /* Cambiar la anchura máxima para pantallas pequeñas */
-    }
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
 }
 .portfolio h2{
     font-size: 48px;
@@ -810,74 +798,91 @@ footer .arriba{
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
-    body {
-        padding-top: 75px; /* Agrega espacio en la parte superior para el navbar */
-    }
-
     nav{
         display: none;
     }
-
-    body {
-    display: block;
-    margin: 8px;
-}
-    
-    .nav-responsive {
-        display: block; /* Muestra el botón de menú responsive */
+    .nav-responsive{
+        display: block;
     }
-    nav.responsive {
+    nav.responsive{
         display: block;
         position: absolute;
         right: 0;
-        top: 75px; /* Posiciona el menú responsive debajo del navbar */
+        top: 75px;
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul {
+    nav.responsive ul{
         display: block !important;
     }
-    nav.responsive ul li {
+    nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
-@media screen and (max-width:800px){
-    body {
-        padding-top: 0; /* Reinicia el padding-top en pantallas más pequeñas */
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
     }
-    .sobremi .fila,
-    .skills .fila,
-    .curriculum .fila,
-    .portfolio .galeria,
-    .contacto .fila {
-        display: block; /* Asegura que las filas se muestren como bloques en pantallas más pequeñas */
+    .sobremi .fila .col{
+        width: fit-content;
     }
-    .sobremi .fila .col,
-    .skills .fila .col,
-    .curriculum .fila .col,
-    .contacto .fila .col {
-        width: 100%; /* Haz que las columnas ocupen el 100% del ancho en pantallas más pequeñas */
+
+    .skills .fila{
+        display: block;
     }
-    .skills .fila .col .barra-skill {
-        width: 100%; /* Ajusta la anchura de las barras de habilidades al 100% en pantallas más pequeñas */
+    .skills .fila .col{
+        width: 100%;
     }
-    .curriculum .fila .col {
-        width: 90%; /* Reduce ligeramente el ancho de las columnas de currículum en pantallas más pequeñas */
+    .skills .fila .col .barra-skill{
+        width: 100%;
     }
-    .curriculum .fila .derecha {
-        margin-left: 20px; /* Ajusta el margen izquierdo de la columna derecha del currículum */
+
+    .curriculum .fila{
+        display: block;
     }
-    .portfolio .galeria,
-    .portfolio .galeria .proyecto,
-    .portfolio .galeria .proyecto img {
-        width: 100%; /* Ajusta el ancho de la galería y las imágenes de proyecto al 100% en pantallas más pequeñas */
-        max-width: none; /* Anula la máxima anchura establecida para los proyectos */
+    .curriculum .fila .col{
+        width: 90%;
     }
-    .contacto .fila,
-    .contacto .fila .col {
-        width: 100%; /* Haz que la fila y las columnas de contacto ocupen el 100% del ancho en pantallas más pequeñas */
+    .curriculum .fila .derecha{
+        margin-left: 20px;
     }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+.boton-descarga {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto /*
+    border: none; /* Sin borde */
+    padding: 15px 32px; /* Espaciado alrededor del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen superior e inferior */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    border-radius: 8px; /* Radio de borde */
+}
+
+.boton-descarga:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
 }
           </style>
 </head>
@@ -1041,13 +1046,13 @@ footer .arriba{
                     </div>
                 </div>
             </div>
-            <a href="JUAN HERRERA (1).mp4" download target="_blank">
+            <a href="/JUAN HERRERA (1).mp4" download target="_blank">
                 <button>
                     DOWNLOAD RESUME <i class="fas fa-download"></i>
                     <span class="overlay"></span>
                 </button>
             </a>
-            <a href="DIPLOMAS_CERTIFICADOS.pdf" download>
+            <a href="/DIPLOMAS_CERTIFICADOS.pdf" download>
                 <button class="boton-descarga">
                     View Diplomas <i class="fas fa-download"></i>
                     <span class="overlay"></span>
@@ -1275,7 +1280,7 @@ footer .arriba{
                             </div>
                         </div>
                         <div class="item">
-                            <h4>CONTENT CREATOR</h4>
+                            <h4>AUDIOVISUAL PRODUCER</h4>
                             <span class="casa">Dynamo, TIS, Cumbia Films and Imaginer Films</span>
                             <span class="fecha">2020-2023</span>
                             <p>In recent years, I've been primarily engaged in producing advertising commercials, acting
@@ -2208,8 +2213,11 @@ h1 {
         </div>
     </div>
 </a>
-</section>
-                
+    </section>
+
+
+
+
 <!-- SECCION CONTACTO -->
 <section id="contacto" class="contacto">
     <div class="contenido-seccion" style="max-width: 800px; width: 100%; margin: 0 auto; text-align: justify;">
