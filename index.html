@@ -1433,71 +1433,62 @@ h1 {
 
 <!-- SECCION CONTACTO -->
 <section id="contacto" class="contacto">
-    <div class="contenido-seccion" style="max-width: 800px; width: 100%; margin: 0 auto; text-align: justify;">
-        <h2 style="font-family: 'BlackDragon3'; text-align: center;">CONTACT</h2>
-        <div class="fila" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="contenido-seccion">
+        <h2>CONTACT</h2>
+        <div class="fila">
             <!-- Formulario -->
-            <div class="col" style="width: calc(100% - 20px); padding: 10px; position: relative; max-width: 400px; margin: 0 auto;">
-               <form action="https://formspree.io/f/mqkrgjrl" method="POST">
+            <div class="col">
+                <form action="https://formspree.io/f/mqkrgjrl" method="POST">
                     <label for="nombre">Name:</label><br>
-                    <input type="text" id="nombre" name="nombre" style="display: block; width: 100%; padding: 18px; border: none; margin-bottom: 20px; background-color: #252a2e; color: #fff; font-size: 18px;">
+                    <input type="text" id="nombre" name="nombre">
                     <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" style="display: block; width: 100%; padding: 18px; border: none; margin-bottom: 20px; background-color: #252a2e; color: #fff; font-size: 18px;">
+                    <input type="email" id="email" name="email">
                     <label for="mensaje">Message:</label><br>
-                    <textarea id="mensaje" name="mensaje" style="display: block; width: 100%; padding: 18px; border: none; margin-bottom: 20px; background-color: #252a2e; color: #fff; font-size: 18px;"></textarea>
-                    <button type="submit" style="cursor: pointer; background-color: transparent; border: 2px solid #fff; width: fit-content; display: block; margin: 20px auto; padding: 10px 22px; font-size: 16px; color: #fff; position: relative; z-index: 10;">
-                        SEND <i class="fas fa-paper-plane"></i>
-                        <span class="overlay" style="position: absolute; top: 0; left: 0; width: 0; height: 100%; background-color: #1cb698; z-index: -1; transition: 1s;"></span>
-                    </button>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <button type="submit">SEND <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
     </div>
-    <style>
-        @font-face {
-            font-family: "BlackDragon3";
-            src: url('/Exima Geometric.ttf');
-        }
-        h2 {
-            font-family: 'BlackDragon3';
-        }
-        /* Estilos generales */
-.contacto {
-    text-align: center;
-    padding: 20px;
-}
-
-.contenido-seccion {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.col {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 700px) {
-    .col {
-        max-width: 100%;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: calc(100% - 20px);
-        margin-bottom: 10px;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-    }
-}
-
-       
-    </style>
 </section>
+
+<style>
+    /* Estilos generales */
+    .contacto {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .contenido-seccion {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .col {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 700px) {
+        .col {
+            max-width: 100%;
+            padding: 0 20px; /* Añadido para espaciar el formulario */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px; /* Añadido para ajustar el espaciado de los campos de entrada */
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+        }
+    }
+</style>
 
     <!-- footer -->
     <footer>
