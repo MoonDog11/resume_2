@@ -2248,6 +2248,40 @@ h1 {
         h2 {
             font-family: 'BlackDragon3';
         }
+        /* Estilos generales */
+.contacto {
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido-seccion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.col {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 700px) {
+    .col {
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
        
     </style>
 </section>
