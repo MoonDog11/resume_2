@@ -130,34 +130,41 @@
         <i class="fas fa-bars"></i>
     </div>
     <!-- SECCION DE INICIO -->
-<section id="inicio" class="inicio">
-    <!-- Imagen de fondo (skull) con estilos en línea -->
-    <img src="skull.jpeg" alt="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover;">
-    <div class="contenedor-banner">
-        <!-- Imagen principal (yo2023) con estilos en línea -->
-        <div class="contenedor-img">
-            <img src="yo2023.jpg" alt="" style="margin-top: 0px; border: 10px solid #07f1e9; display: block; width: 100%; margin: auto; border-radius: 100%; align-self: auto; width: 100%; height: auto;">
+<section id="inicio" class="inicio" style="position: relative;">
+        <div class="contenedor-banner">
+            <!-- Imagen principal (yo2023) con estilos en línea -->
+            <div class="contenedor-img">
+                <img src="yo2023.jpg" alt="" style="margin-top: 0px; border: 10px solid #07f1e9; display: block; width: 100%; margin: auto; border-radius: 100%; align-self: auto; width: 100%; height: auto;">
+            </div>
+            <h1 style="font-family: 'BlackDragon2';">JUAN PABLO HERRERA</h1>
+            <h2>PUBLICIST & FULLSTACK DEVELOPER</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/juanherrera-directorcreaitivo/" download target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/MoonDog11" download target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://moondogsespacio.slack.com" download target="_blank"><i class="fab fa-slack"></i></a>
+                <a href="https://www.behance.net/MoonDog_Studio"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
         </div>
-        <h1 style="font-family: 'BlackDragon2';">JUAN PABLO HERRERA</h1>
-        <h2>PUBLICIST & FULLSTACK DEVELOPER</h2>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/juanherrera-directorcreaitivo/" download target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/MoonDog11" download target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://moondogsespacio.slack.com" download target="_blank"><i class="fab fa-slack"></i></a>
-            <a href="https://www.behance.net/MoonDog_Studio"><i class="fab fa-behance"></i></a>
-            <a href="#"><i class="fab fa-skype"></i></a>
-        </div>
-    </div>
-    <style>
-           @font-face {
-        font-family: "BlackDragon2";
-        src: url(Knoxx.ttf);
-    }
-        h1 {
-            font-family: 'BlackDragon2';
+        <style>
+               @font-face {
+            font-family: "BlackDragon2";
+            src: url(Knoxx.ttf);
         }
-    </style>
-</section>
+            h1 {
+                font-family: 'BlackDragon2';
+            }
+            .inicio {
+                background-image: url(skull.jpeg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100%;
+                position: relative;
+            }
+        </style>
+    </section>
 
     <!-- SECCION ABOUT ME -->
     <section id="sobremi" class="sobremi">
