@@ -14,17 +14,17 @@
 
     @font-face {
         font-family: "BlackDragon";
-        src: url(IMG/Signotera\ Brush.ttf);
+        src: url(Signotera\ Brush.ttf);
     }
     
     @font-face {
         font-family: "BlackDragon2";
-        src: url(IMG/Knoxx.ttf);
+        src: url(Knoxx.ttf);
     }
     
     @font-face {
         font-family: "BlackDragon3";
-        src: url(IMG/Exima\ Geometric.ttf);
+        src: url(Exima\ Geometric.ttf);
     }
     
 .logo {
@@ -38,7 +38,7 @@
      padding: 20px;
  }
 
- h2 {
+ .h1 {
      color: #fefafa;
      font-size: 24px;
      margin-bottom: 20px;
